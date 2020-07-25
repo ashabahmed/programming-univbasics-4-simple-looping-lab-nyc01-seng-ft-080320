@@ -25,5 +25,11 @@ def output_array(array)
 end  
 
 def return_string_array(array)
-  str_array = array.collect{|i| i.to_s}
+  counter = 0
+  str_array = []
+  while count < array.length do 
+    array[counter].to_s
+    str_array.push(array[counter].to_s)
+    count += 1
+  end
 end
